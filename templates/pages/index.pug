@@ -4,11 +4,24 @@ html(lang="en")
         title='Тестовая страница'
         link(rel='stylesheet', href='css/styles.css')
     body
-        h1 Заголовок
-        #container.col
-            if youAreUsingPug
-                p Вы используете pug
-            else
-                p Начните использовать pug
-            p.
-                Тестовый параграф
+        #myBtnContainer
+            button(class='btn active' onclick="filterSelection('all')") Show all
+            button(class='btn' onclick="filterSelection('cars')") Cars
+            button(class='btn' onclick="filterSelection('animals')") Animals
+            button(class='btn' onclick="filterSelection('fruits')") Fruits
+            button(class='btn' onclick="filterSelection('colors')") Colors
+        .container
+            .filterDiv.cars BMW
+            .filterDiv.colors.fruits Orange
+            .filterDiv.cars Volvo
+            .filterDiv.colors Red
+            .filterDiv.cars.animals Mustang
+            .filterDiv.colors Blue 
+            .filterDiv.animals Cat
+            .filterDiv.animals Dog
+            .filterDiv.fruits Melon
+            .filterDiv.fruits.animals Kiwi
+            .filterDiv.fruits Banana
+            .filterDiv.fruits Lemon
+            .filterDiv.animals Cow
+        script(src='app.js')
