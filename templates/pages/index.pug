@@ -4,24 +4,18 @@ html(lang="en")
         title='Тестовая страница'
         link(rel='stylesheet', href='css/styles.css')
     body
-        #myBtnContainer
-            button(class='btn active' onclick="filterSelection('all')") Show all
-            button(class='btn' onclick="filterSelection('cars')") Cars
-            button(class='btn' onclick="filterSelection('animals')") Animals
-            button(class='btn' onclick="filterSelection('fruits')") Fruits
-            button(class='btn' onclick="filterSelection('colors')") Colors
-        .container
-            .filterDiv.cars BMW
-            .filterDiv.colors.fruits Orange
-            .filterDiv.cars Volvo
-            .filterDiv.colors Red
-            .filterDiv.cars.animals Mustang
-            .filterDiv.colors Blue 
-            .filterDiv.animals Cat
-            .filterDiv.animals Dog
-            .filterDiv.fruits Melon
-            .filterDiv.fruits.animals Kiwi
-            .filterDiv.fruits Banana
-            .filterDiv.fruits Lemon
-            .filterDiv.animals Cow
+        .rooms__content
+            #myBtnContainer
+                button(class='btn active' onclick="filterSelection('all')") Show all
+                button(class='btn' onclick="filterSelection('adriatic')") Adriatic suite
+                button(class='btn' onclick="filterSelection('atelier')") Atelier
+                button(class='btn' onclick="filterSelection('gallery')") Gallery
+                button(class='btn' onclick="filterSelection('piazza')") Grand Piazza suite
+            .container
+                .filterDiv.adriatic.piazza Animal allowed
+                .filterDiv.adriatic.gallery Smoking room
+                .filterDiv.adriatic.piazza.gallery Sea view
+                .filterDiv.adriatic.piazza.atelier.gallery Swimming pool
+                .filterDiv.adriatic.piazza.atelier Wi-Fi 24h
+                .filterDiv.adriatic.piazza.atelier.gallery Breakfast Included 
         script(src='app.js')

@@ -5,27 +5,22 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <div id="myBtnContainer">
-      <button class="btn active" onclick="filterSelection('all')">Show all</button>
-      <button class="btn" onclick="filterSelection('cars')">Cars</button>
-      <button class="btn" onclick="filterSelection('animals')">Animals</button>
-      <button class="btn" onclick="filterSelection('fruits')">Fruits</button>
-      <button class="btn" onclick="filterSelection('colors')">Colors</button>
-    </div>
-    <div class="container">
-      <div class="filterDiv cars">BMW</div>
-      <div class="filterDiv colors fruits">Orange</div>
-      <div class="filterDiv cars">Volvo</div>
-      <div class="filterDiv colors">Red</div>
-      <div class="filterDiv cars animals">Mustang</div>
-      <div class="filterDiv colors">Blue </div>
-      <div class="filterDiv animals">Cat</div>
-      <div class="filterDiv animals">Dog</div>
-      <div class="filterDiv fruits">Melon</div>
-      <div class="filterDiv fruits animals">Kiwi</div>
-      <div class="filterDiv fruits">Banana</div>
-      <div class="filterDiv fruits">Lemon</div>
-      <div class="filterDiv animals">Cow</div>
+    <div class="rooms__content">
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')">Show all</button>
+        <button class="btn" onclick="filterSelection('adriatic')">Adriatic suite</button>
+        <button class="btn" onclick="filterSelection('atelier')">Atelier</button>
+        <button class="btn" onclick="filterSelection('gallery')">Gallery</button>
+        <button class="btn" onclick="filterSelection('piazza')">Grand Piazza suite</button>
+      </div>
+      <div class="container">
+        <div class="filterDiv adriatic piazza">Animal allowed</div>
+        <div class="filterDiv adriatic gallery">Smoking room</div>
+        <div class="filterDiv adriatic piazza gallery">Sea view</div>
+        <div class="filterDiv adriatic piazza atelier gallery">Swimming pool</div>
+        <div class="filterDiv adriatic piazza atelier">Wi-Fi 24h</div>
+        <div class="filterDiv adriatic piazza atelier gallery">Breakfast Included </div>
+      </div>
     </div>
     <script src="app.js"></script>
   </body>
